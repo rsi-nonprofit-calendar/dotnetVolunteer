@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dotnetcoreVolunteer"
+    "\\dotnetcoreVolunteer",
+    "\\dotnetcoreVolunteer\\Models"
   ],
-  "SelectedNode": "\\dotnetcoreVolunteer\\dotnetcoreVolunteer.csproj",
+  "SelectedNode": "\\dotnetcoreVolunteer\\Models\\VolunteerContext.cs",
   "PreviewInSolutionExplorer": false
 }
