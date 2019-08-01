@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\dotnetcoreVolunteer",
-    "\\dotnetcoreVolunteer\\Models"
+    "\\dotnetcoreVolunteer\\Migrations",
+    "\\dotnetcoreVolunteer\\Models",
+    "\\dotnetcoreVolunteer\\Properties"
   ],
-  "SelectedNode": "\\dotnetcoreVolunteer\\Models\\VolunteerContext.cs",
+  "SelectedNode": "\\dotnetcoreVolunteer\\Migrations",
   "PreviewInSolutionExplorer": false
 }
