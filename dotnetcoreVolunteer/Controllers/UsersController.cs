@@ -12,9 +12,9 @@ namespace dotnetcoreVolunteer.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly VolunteerContext _context;
+        private readonly VolunteerAppContext _context;
 
-        public UsersController(VolunteerContext context)
+        public UsersController(VolunteerAppContext context)
         {
             _context = context;
         }

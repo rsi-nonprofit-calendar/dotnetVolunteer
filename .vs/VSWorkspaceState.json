@@ -6,6 +6,6 @@
     "\\dotnetcoreVolunteer\\Models",
     "\\dotnetcoreVolunteer\\Properties"
   ],
-  "SelectedNode": "\\dotnetcoreVolunteer\\Migrations",
+  "SelectedNode": "\\dotnetcoreVolunteer\\Models\\User.cs",
   "PreviewInSolutionExplorer": false
 }
