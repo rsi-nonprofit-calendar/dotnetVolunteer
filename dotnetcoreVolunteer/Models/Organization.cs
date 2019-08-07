@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 public class Organization
 {
+    [Key]
     public Guid OrganizationId { get; set; }
     [Column(TypeName = "varchar(200)")]
     public string Email { get; set; }

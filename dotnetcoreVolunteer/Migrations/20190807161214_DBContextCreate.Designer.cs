@@ -3,14 +3,16 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace dotnetcoreVolunteer.Migrations
 {
     [DbContext(typeof(VolunteerAppContext))]
-    partial class VolunteerAppContextModelSnapshot : ModelSnapshot
+    [Migration("20190807161214_DBContextCreate")]
+    partial class DBContextCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
