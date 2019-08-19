@@ -23,16 +23,24 @@ namespace dotnetcoreVolunteer
 
         public IConfiguration Configuration { get; }
 
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
-            });
-
+           // using (var context = new ApplicationDbContext())
+            //{
+             //   context.Database.EdnsureCreated();
+            //}
+                services.Configure<CookiePolicyOptions>(options =>
+                {
+                    options.CheckConsentNeeded = context => true;
+                    options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
+                });
+     
+                services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
+
+
             var awsConnectionString=Configuration.GetValue<string>("awsConnectionString");
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<VolunteerAppContext>(options => options.UseSqlServer(awsConnectionString));
@@ -53,7 +61,18 @@ namespace dotnetcoreVolunteer
             {
                 app.UseHsts();
             }
-
+            app.Use(async (context, next) =>
+            {
+                await next();
+                if (context.Response.StatusCode == 404)
+                {
+                    context.Request.Path = "/index.html";
+                    await next();
+                }
+            });
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
