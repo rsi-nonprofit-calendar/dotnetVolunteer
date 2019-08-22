@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TodoApi.Models;
+
 
 namespace dotnetcoreVolunteer
 {
@@ -32,7 +34,15 @@ namespace dotnetcoreVolunteer
                 options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
             });
 
-            
+            services.Configure<IISServerOptions>(options =>
+            {
+                options.AutomaticAuthentication = false;
+            });
+
+            services.AddDbContext<TodoContext>(opt =>
+                opt.UseInMemoryDatabase("TodoList"));
+
+
             var awsConnectionString=Configuration.GetValue<string>("awsConnectionString");
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<VolunteerAppContext>(options => options.UseSqlServer(awsConnectionString));
@@ -40,6 +50,7 @@ namespace dotnetcoreVolunteer
             {
                 c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "Volunteer Calendar", Version = "1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
