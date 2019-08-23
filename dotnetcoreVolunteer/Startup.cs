@@ -29,7 +29,7 @@ namespace dotnetcoreVolunteer
         {
            // using (var context = new ApplicationDbContext())
             //{
-             //   context.Database.EdnsureCreated();
+             //   context.Database.EnsureCreated();
             //}
                 services.Configure<CookiePolicyOptions>(options =>
                 {

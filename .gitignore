@@ -366,3 +366,31 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+/dotnetcoreVolunteer/System.Composition.TypedParts.dll
+/dotnetcoreVolunteer/System.Composition.Runtime.dll
+/dotnetcoreVolunteer/System.Composition.Hosting.dll
+/dotnetcoreVolunteer/System.Composition.Convention.dll
+/dotnetcoreVolunteer/System.Composition.AttributedModel.dll
+/dotnetcoreVolunteer/Swashbuckle.AspNetCore.SwaggerUI.dll
+/dotnetcoreVolunteer/Swashbuckle.AspNetCore.SwaggerGen.dll
+/dotnetcoreVolunteer/Swashbuckle.AspNetCore.Swagger.dll
+/dotnetcoreVolunteer/Swashbuckle.AspNetCore.dll
+/dotnetcoreVolunteer/NuGet.Frameworks.dll
+/dotnetcoreVolunteer/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/dotnetcoreVolunteer/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/dotnetcoreVolunteer/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/dotnetcoreVolunteer/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/dotnetcoreVolunteer/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/dotnetcoreVolunteer/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/dotnetcoreVolunteer/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+/dotnetcoreVolunteer/Microsoft.CodeAnalysis.Workspaces.dll
+/dotnetcoreVolunteer/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/dotnetcoreVolunteer/dotnetcoreVolunteer.runtimeconfig.json
+/dotnetcoreVolunteer/dotnetcoreVolunteer.dll
+/dotnetcoreVolunteer/dotnetcoreVolunteer.deps.json
+/dotnetcoreVolunteer/dotnet-aspnet-codegenerator-design.dll
+/dotnetVolunteer.zip
+/dotnetcoreVolunteer/Properties/appsettings.json
+/dotnetcoreVolunteer/Properties/web.config
+/dotnetcoreVolunteer/web.config
+/appspec.yml
