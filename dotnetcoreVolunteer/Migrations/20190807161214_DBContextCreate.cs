@@ -19,25 +19,25 @@ namespace dotnetcoreVolunteer.Migrations
                 name: "AchievementId",
                 table: "Users");
 
-            migrationBuilder.AddColumn<int>(
+            migrationBuilder.AddColumn<string>(
                 name: "AboutMe",
                 table: "Users",
                 nullable: false,
                 defaultValue: 0);
 
-            migrationBuilder.AddColumn<int>(
+            migrationBuilder.AddColumn<string>(
                 name: "Email",
                 table: "Users",
                 nullable: false,
                 defaultValue: 0);
 
-            migrationBuilder.AddColumn<int>(
+            migrationBuilder.AddColumn<string>(
                 name: "Name",
                 table: "Users",
                 nullable: false,
                 defaultValue: 0);
 
-            migrationBuilder.AddColumn<int>(
+            migrationBuilder.AddColumn<string>(
                 name: "Password",
                 table: "Users",
                 nullable: false,
