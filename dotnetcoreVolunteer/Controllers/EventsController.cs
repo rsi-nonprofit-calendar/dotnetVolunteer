@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using EventApi.Controllers;
 
-namespace dotnetcoreVolunteer.Controllers.NewFolder
+
+namespace EventApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

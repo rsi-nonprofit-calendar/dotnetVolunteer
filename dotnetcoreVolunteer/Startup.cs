@@ -11,7 +11,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using TodoApi.Models;
 
 
 namespace dotnetcoreVolunteer
@@ -39,8 +38,8 @@ namespace dotnetcoreVolunteer
                 options.AutomaticAuthentication = false;
             });
 
-            services.AddDbContext<TodoContext>(opt =>
-                opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<VolunteerAppContext>(opt=>
+                opt.UseInMemoryDatabase("VolunteerList"));
 
 
             var awsConnectionString=Configuration.GetValue<string>("awsConnectionString");
